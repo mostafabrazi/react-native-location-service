@@ -24,7 +24,6 @@ public class BackgroundService extends ReactContextBaseJavaModule {
         return "BackgroundService";
     }
 
-    // add to CalendarModule.java
     @ReactMethod
     public void createBackgroundThread(String name, String user_id) {
         Intent locationIntent = new Intent(getReactApplicationContext(), LocationService.class);
