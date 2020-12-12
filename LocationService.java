@@ -118,7 +118,7 @@ public class LocationService extends Service implements LocationListener {
         MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
         RequestBody body = RequestBody.create(mediaType, "id=" + id + "&positions=" + positions);
         Request request = new Request.Builder()
-                .url("https://admin-open24hr.com/api/update_positions")
+                .url("[URL]")
                 .method("PUT", body)
                 .addHeader("Content-Type", "application/x-www-form-urlencoded")
                 .build();
